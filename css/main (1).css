@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+body, ul, p, video{margin: 0;padding: 0;}
+ul{list-style: none;}
+a:link, a:visited, a:hover, a:active{text-decoration: none;color: inherit;}
+img{border: none;vertical-align: top;}
+header, nav, section, footer{display: block;}
+.blind{width: 1px;height: 1px; overflow: hidden; position: absolute; border: none; clip: rect(1px 1px 1px 1px); clip-path: inset(50%);}
+.d_n{display: none;}
+.d_f{display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex;}
+.f_l{float: left;}
+.f_r{float: right;}
+.p_r{position: relative;}
+.p_a{position: absolute;}
+
+
+body{width: 100%;  font-family: SCoreDream;background: #000;}
+
+
+#notice{height: 1080px;position: relative;background: url("../images/02_main/notice_final.jpg") no-repeat;}
+#notice > a:nth-child(1){top: 47px; left: 770px;width: 692px; height: 507px;}
+#notice > a:nth-child(2){top: 47px; left: 1530px;width: 319px;height: 508px;}
+#notice > a:nth-child(3){top: 616px; left: 770px;width: 1079px; height: 406px;}
+
+#searchb a .search{top: 293.3px;left: 1350.5px;cursor: pointer;}
+#searchb a .search_e{width: 525px;  height: 264px;  top: 244.3px;  left: 1289.5px;opacity: 0;}
+#searchb a:hover .search_e, #searchb a:focus .search_e{opacity: 1;}
+
+/* #qnapage a:focus .search, #qnapage a:hover .search{.searcj_e가 나타나게하고 싶음} */
+
+#moreb a .more{top: 487.8px;left: 417px;width: 697.5px;height: 136px;}
+#moreb a .more_e{top: 476px;left: 401px;width: 728.5px;height: 162px;opacity: 0;}
+#moreb a:hover .more_e, #moreb a:focus .more_e{opacity: 1;}
+
+
+
+
+
+
+.footer{top: 5070px;}
