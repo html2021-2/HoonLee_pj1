@@ -19,7 +19,7 @@
 
       // swiper 스크립트를 호출해서 사용하기
       const swiper1 = new Swiper('#cnt1 .swiper-container', {
-        // loop: true, => 자동실행이면 무한 반복이 된다
+        loop: true, // => 자동실행이면 무한 반복이 된다
         centeredSlides: true,
         pagination: {
           el: ".swiper-pagination",
@@ -48,7 +48,7 @@
           disableOnInteraction: false, //스와이프 후에 자동실행 비활성화를 차단(자동실행 유지)
         },
       });
-    
+
       //정지와 재생 스크립트 추가
       $('#cnt1 .btn_stop').on('click', function () {
         $(this).hide().siblings('button').show();
@@ -60,11 +60,14 @@
       });
 
       $('#cnt1 .swiper-slide a').on('click', function () {
-        var tgNum = $(this).parent().index();
+        var tgIdx = $(this).parent().data('swiper-slide-index');
 
-        $('#cnt1 .btn_stop').trigger('click');  //슬라이더 중 하나를 클릭하면 자동실행 멈추기
-        $('#cnt1 .swiper-pagination span').eq(tgNum).click();  //인디케이터를 클릭하면 보여지는 컨텐츠가 이동?? 이상하다
+        $('#cnt1 .btn_stop').trigger('click'); //슬라이더 중 하나를 클릭하면 자동실행 멈추기
+        $('#cnt1 .swiper-pagination span').eq(tgIdx).click();
 
+        // loop 하지 않는 경우
+        // var tgNum = $(this).parent().index();
+        // $('#cnt1 .swiper-pagination span').eq(tgNum).click();  
         return false;
       });
     });

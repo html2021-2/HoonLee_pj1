@@ -42,10 +42,12 @@ body{text-align: center; margin: 0 auto;}
 #cnt1 .book_tit li{margin-top: 20px; width: 320px; height: 100px; line-height: 94px; background: #fff; border: 3px solid #3d3e41; box-sizing: border-box;}
 #cnt1 .book_tit li a{display: block; width: 100%; height: 100%; font-size: 20px;} */
 
-#cnt1 .swiper-wrapper{justify-content: space-around;}
+/* #cnt1 .swiper-wrapper{justify-content: space-around;} */
 #cnt1 .swiper-slide{/* padding-left: 30px; */transition: all 0.5s;transform: scale(0.9);}
 #cnt1 .swiper-slide.swiper-slide-active{transform: scale(1);}
-#cnt1 .swiper-pagination{width: 50%;}
+#cnt1 .swiper-pagination{width: 30%;background: yellow;}
+
+#cnt1 .data-swiper-slide-index button{width: 50px;height: 30px;}
 
 /* cnt2 */
 
